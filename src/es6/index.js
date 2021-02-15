@@ -1,4 +1,5 @@
-//CLASE2 -- antes de es6
+//CLASE2
+// antes de es6
 
 function newFunction(name, AbstractRange, edad) {
     var name = name || 'oscar';
@@ -24,7 +25,8 @@ console.log(epicphrase);
 let epicphrase2 = `${hello} ${world} 22`;
 console.log(epicphrase2);
 
-// CLASE3 //-- variable string LET y CONST
+// CLASE3
+//-- variable string LET y CONST
 let lorem = "primera frase super epica de celismx \n" +
 "otra(segunda) frase epica que necesitamos."
 
@@ -54,3 +56,35 @@ let team2 = ['valeria', 'yesica', 'camila'];
 let education = ['david', ...team1, ...team2];
 
 console.log(education);
+
+
+//LET
+{
+    var globalVar = "global var";
+}
+
+{
+    let globalLet = 'global let';
+    console.log(globalLet)
+}
+
+console.log(globalVar);
+
+//CONST //para evitar reasignar valor a variable
+const a = 'b';
+a = 'a';
+console.log(a);
+
+//CLASE4
+//Arrow Functions, Promesas y Parámetros en objetos
+
+LET NAME = 'OSCAR';
+let age = 32;
+
+obj = { name : name, age : age};
+
+obj2 = {}
+
+
+
+
