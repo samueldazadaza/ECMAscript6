@@ -127,7 +127,7 @@ helloPromise()
     .then(() => console.log('hola'))
     .catch(error => console.log(error));
 
-//CLASE5
+//CLASE 5
 //Clases, Módulos y Generadores
 
 //clases y herencaia js
@@ -166,3 +166,7 @@ const generatorHello = helloWorld();
 console.log(generatorHello.next().value);
 console.log(generatorHello.next().value);
 console.log(generatorHello.next().value);
+
+
+//CLASE 6
+//
