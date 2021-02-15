@@ -78,13 +78,51 @@ console.log(a);
 //CLASE4
 //Arrow Functions, Promesas y Parámetros en objetos
 
-LET NAME = 'OSCAR';
+let name = 'OSCAR';
 let age = 32;
 
+//es5
 obj = { name : name, age : age};
+//es6
+obj2 = { name, age };
+console.log(obj2);
 
-obj2 = {}
+//arrow function o funciones tipo flecha
 
+const names = [
+    {name: 'Oscar', age: 32}
+    {name:'Yesica', age: 27}
+]
+//antes
+let listOfNames = names.map(function (item) {
+    console.log(item.name)
+})
+//es6
+let listOfNames2 = names.map(item => console.log(item.name));
 
+const listOfNames3 = (name, age, country) => {
+    .......;
+}
 
+const listOfNames4 = name => {
+    .......;
+}
 
+const square = num => num * num; //esto genera return auto sin poner return
+
+//PROMESAS solución para el asincronismo (algo va a pasar)
+//para hacer peticiones a una API (sincronismo)
+const helloPromise = () => {
+    return new Promise((resolve, reject) => {
+        if (true) {
+            resolve('Hey!')
+        } else {
+            reject('Ups!!')
+        }
+    });
+}
+
+helloPromise()
+    .then(response => console.log(response))
+    .then(() => console.log('hola'))
+    .catch(error => console.log(error));
