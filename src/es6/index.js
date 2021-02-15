@@ -126,3 +126,43 @@ helloPromise()
     .then(response => console.log(response))
     .then(() => console.log('hola'))
     .catch(error => console.log(error));
+
+//CLASE5
+//Clases, Módulos y Generadores
+
+//clases y herencaia js
+class calculator {
+    constructor() { 
+        this.valuaA = 0;
+        this.valueB = 0;
+    }
+    sum(valueA, valueB) {//esto es parte es un metodo
+        this.valuaA = valueA;
+        this.valueB = valueB;
+        return this.valuaA + this.valueB;
+    } 
+}
+
+const calc = new calculator();
+console.log(calc.sum(2, 2));
+
+//import y export -- MODULOS
+import { hello } From './module';
+
+hello() //para llamar el modulo
+
+//GENERATORS -- retorna una serie de valores segun algoritmo definido..... ej: caso fibonassi
+
+function* helloWorld() {
+    if(true) {
+        yield 'Hello, ' 
+    }
+    if(true) {
+        yield 'world'
+    }
+};
+
+const generatorHello = helloWorld();
+console.log(generatorHello.next().value);
+console.log(generatorHello.next().value);
+console.log(generatorHello.next().value);
