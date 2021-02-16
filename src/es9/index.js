@@ -20,7 +20,8 @@ let { country, ...all } = obj2;
 console.log(all); //imprime el resto de elementos los encapsula y elimina country
 
 
-//PROPIEDADES DE PROPAGACIÓN,,  unir varios elementos de objeto a otro objeto
+//PROPIEDADES DE PROPAGACIÓN
+//unir varios elementos de objeto a otro objeto
 const obj = {
     name: 'Oscar',
     age: 32,
