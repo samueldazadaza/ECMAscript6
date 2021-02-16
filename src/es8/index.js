@@ -35,3 +35,36 @@ console.log('food'.padEnd(12, ' ---------------'))
 const obj = {
     name: 'oscar',// triling comas (buenas practicas, poner coma(,) al final del elemento dentro de un objeto)
 }
+
+
+
+//CLASE 8
+//Async await
+const helloWorld = () => {
+    return new Promise ((resolve, reject) =>{
+        (false)
+            ? setTimeout(() => resolve ('Hello World'), 2000)
+            : reject(new Error('Test error'))
+    })
+};
+
+const helloAsync = async () => {
+    const hello = await helloWorld();
+    console.log(hello);
+}
+
+helloAsync(); //para llamar la función
+
+//otra propuesta
+const anotherFunction = async () => {
+    try {
+        const hello = await helloWorld();
+        console.log(hello);
+    } catch (error) {
+        console.log(error);
+    }
+};
+
+anotherFunction();
+
+
